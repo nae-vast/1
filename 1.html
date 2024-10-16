@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VAST & Cherpu Panchayat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .team-member img {
+            border-radius: 50%;
+            border: 3px solid #3b82f6;
+        }
+        .team-member {
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .bg-hero {
+            background-image: url('path/to/hero_image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between">
+            <div class="text-white font-bold text-xl">VAST & Cherpu Panchayat</div>
+            <div class="space-x-4">
+                <a href="#about" class="text-white hover:underline">About</a>
+                <a href="#team" class="text-white hover:underline">Team</a>
+                <a href="#projects" class="text-white hover:underline">Projects</a>
+                <a href="#contact" class="text-white hover:underline">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-hero h-64 flex items-center justify-center text-center text-white">
+        <div>
+            <h1 class="text-4xl font-bold">About Us</h1>
+            <p class="mt-2 text-lg">Collaboration between Cherpu Panchayat and Vidya Academy of Science and Technology</p>
+            <a href="#team" class="mt-4 inline-block bg-white text-blue-600 py-2 px-4 rounded-lg shadow-lg">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="container mx-auto my-10 p-5 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl text-center mb-5 font-semibold">Our Mission</h2>
+        <p class="text-center mb-10 text-gray-700">Students of VAST have developed a complex software for PWD persons to filter, analyze, and generate reports.</p>
+    </section>
+
+    <section id="team" class="container mx-auto my-10 p-5 bg-white shadow-md rounded-lg">
+        <h2 class="text-xl mb-4 font-semibold text-center">Team Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Team Member Card -->
+            <div class="border rounded-lg p-5 text-center team-member" data-aos="fade-up">
+                <img src="path/to/principal_photo.jpg" alt="Principal" class="w-32 h-32 mx-auto mb-3">
+                <h3 class="font-bold">Principal</h3>
+                <p>Principal Name</p>
+            </div>
+            <!-- Repeat for other team members -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-200 p-5 my-10 rounded-lg shadow-md">
+        <h2 class="text-xl text-center mb-5 font-semibold">Our Partners</h2>
+        <div class="flex justify-center space-x-5">
+            <img src="path/to/cherpu_image.jpg" alt="Cherpu Panchayat" class="w-32 h-32 rounded-full" data-aos="zoom-in">
+            <img src="path/to/vast_image.jpg" alt="Vidya Academy" class="w-32 h-32 rounded-full" data-aos="zoom-in">
+        </div>
+    </section>
+
+    <section class="container mx-auto my-10 text-center">
+        <h2 class="text-xl mb-5 font-semibold">Cherpu Panchayat General Body</h2>
+        <img src="path/to/panchayat_poster.jpg" alt="Panchayat General Body" class="mx-auto rounded-lg shadow-md" data-aos="fade-up">
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mx-auto my-10 p-5 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl text-center mb-5 font-semibold">Testimonials</h2>
+        <div class="space-y-4">
+            <blockquote class="border-l-4 border-blue-600 pl-4 italic">
+                "This collaboration has truly transformed our approach to technology in the community."
+                <footer class="mt-2 font-bold">— Community Leader</footer>
+            </blockquote>
+            <blockquote class="border-l-4 border-blue-600 pl-4 italic">
+                "The software developed by VAST students has made a significant impact on PWD persons."
+                <footer class="mt-2 font-bold">— Student</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white text-center p-5">
+        <p>&copy; 2024 VAST & Cherpu Panchayat. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
